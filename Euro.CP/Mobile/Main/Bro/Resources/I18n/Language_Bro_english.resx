@@ -1,0 +1,253 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Amount" xml:space="preserve">
+    <value>Amount</value>
+  </data>
+  <data name="DistributorIdShouldBeANumber" xml:space="preserve">
+    <value>Distributor Id should be a number</value>
+  </data>
+  <data name="ItemName" xml:space="preserve">
+    <value>Item Name</value>
+  </data>
+  <data name="InventoryItemID" xml:space="preserve">
+    <value>Inventory Item ID</value>
+  </data>
+  <data name="MaxAmount" xml:space="preserve">
+    <value>Max Amount</value>
+  </data>
+  <data name="MinAmount" xml:space="preserve">
+    <value>Min Amount</value>
+  </data>
+  <data name="MoneyTransferCancelledSuccessPopupMessage" xml:space="preserve">
+    <value>Cancel Transaction # {0}</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="OrderedList" xml:space="preserve">
+    <value>Ordered list</value>
+  </data>
+  <data name="ProductId" xml:space="preserve">
+    <value>Product Id</value>
+  </data>
+  <data name="ProfileWasSuccessfullyUpdated" xml:space="preserve">
+    <value>Profile was successfully updated</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="Test1234ProfileWasCreatedSuccessfully" xml:space="preserve">
+    <value>Test_1234 profile was created successfully</value>
+  </data>
+  <data name="ProductWasActivatedSuccessfully" xml:space="preserve">
+    <value>Product was activated successfully.</value>
+  </data>
+  <data name="TheProfileWasDeleted" xml:space="preserve">
+    <value>The profile was deleted.</value>
+  </data>
+  <data name="UnorderedList" xml:space="preserve">
+    <value>Unordered list</value>
+  </data>
+  <data name="Update" xml:space="preserve">
+    <value>Update</value>
+  </data>
+  <data name="LimitationsHaveBeenPlacedOnYourWalletPleaseContactCustomerServiceAt18775097998" xml:space="preserve">
+    <value>Limitations have been placed on your wallet. Please contact customer service at 1-877-509-7998</value>
+  </data>
+  <data name="EditedSucessfull" xml:space="preserve">
+    <value>was edited successfully.</value>
+  </data>
+  <data name="Product" xml:space="preserve">
+    <value>Product</value>
+  </data>
+  <data name="Cash" xml:space="preserve">
+    <value>Cash</value>
+  </data>
+  <data name="Credit" xml:space="preserve">
+    <value>Credit</value>
+  </data>
+  <data name="Agent" xml:space="preserve">
+    <value>Agent</value>
+  </data>
+  <data name="ClearAllBetaTesters" xml:space="preserve">
+    <value>Clear All Beta Testers</value>
+  </data>
+  <data name="MessageWasSentSuccessfully" xml:space="preserve">
+    <value>Message \d{4} was sent successfully.</value>
+  </data>
+  <data name="DeleteProductPopupMessage" xml:space="preserve">
+    <value>This action will delete the Product with all its Product Items. You cannot undo the action! Are you sure you want to delete this item?</value>
+  </data>
+  <data name="ProductMetadataUpdatedSuccessfully" xml:space="preserve">
+    <value>Product metadata updated successfully</value>
+  </data>
+  <data name="ShowNotes" xml:space="preserve">
+    <value>Show notes</value>
+  </data>
+  <data name="PasswordHasBeenResetSuccessfully" xml:space="preserve">
+    <value>Password has been reset successfully!</value>
+  </data>
+  <data name="RetailerCommissionShouldBeBetweenMinAndMaxRetailerCommissionValues" xml:space="preserve">
+    <value>Retailer Commission should be between Min and Max Retailer Commission values</value>
+  </data>
+  <data name="MaxRetailerCommissionShouldBeGreaterThanOrEqualToRetailerCommission" xml:space="preserve">
+    <value>Max Retailer Commission should be greater than or equal to Retailer Commission</value>
+  </data>
+  <data name="ProductNotesUpdatedSuccessfully" xml:space="preserve">
+    <value>Product notes updated successfully</value>
+  </data>
+  <data name="ProductWasCreatedSuccessfullyPleaseContinueSetupByAddingProductItemAndDefiningCommissionsFees" xml:space="preserve">
+    <value>Product {0} was created successfully. Please continue setup by adding Product Item(s) and defining Commissions / Fees</value>
+  </data>
+  <data name="AllowedForCustomers" xml:space="preserve">
+    <value>Allowed For Customers</value>
+  </data>
+  <data name="AllowedForDistributors" xml:space="preserve">
+    <value>Allowed For Distributors</value>
+  </data>
+  <data name="AllowedForRetailers" xml:space="preserve">
+    <value>Allowed For Retailers</value>
+  </data>
+  <data name="ProductType" xml:space="preserve">
+    <value>Product Type</value>
+  </data>
+  <data name="UploadRetailerBlackListForProduct" xml:space="preserve">
+    <value>Upload retailer black list for product</value>
+  </data>
+  <data name="ProductWasCreatedSuccessfully" xml:space="preserve">
+    <value>Product {0} was created successfully. Please continue setup by adding Product Item(s) and defining Commissions / Fees</value>
+  </data>
+  <data name="PricingGroupItemErrorMessage" xml:space="preserve">
+    <value>Ranges can not overlap for the same payer, delivery method and payment method</value>
+ </data>
+  <data name="ProductItemStatusWasSetToDiscontinued" xml:space="preserve">
+    <value>Product Item status was set to "DISCONTINUED". Retailers won't be able to sell this item but it will be visible for reporting purposes.</value>
+ </data>
+  <data name="CanNotSetAllowedForRetailersWhileNotAllowedForDistributors" xml:space="preserve">
+    <value>Cannot set allowed for retailers while not allowed for distributors</value>
+  </data>
+  <data name="ProductItemWasCreatedSuccessfully" xml:space="preserve">
+    <value>Product Item was created successfully.</value>
+  </data>
+  <data name="ProductItemWasDeactivatedSuccessfully" xml:space="preserve">
+    <value>Product Item was deactivated successfully.</value>
+  </data>
+  
+</root>

@@ -19,7 +19,8 @@ namespace Euro.Core.Automation.WebDriver.WrapperFactory
         private static string DeviceName = "deviceName";
         private static string App = "app";
         private static string NoReset = "noReset";
-        private static string url = ConfigurationManager.AppSettings["MobileUrl"].ToString();
+        private static string AccessKey = "accessKey";
+        private static string url = "https://cloud.seetest.io/wd/hub/";//ConfigurationManager.AppSettings["MobileUrl"].ToString();
 
         /// <summary>
         /// Initializes a new instance of the <see cref="MobileDriver"/> class.
@@ -27,6 +28,7 @@ namespace Euro.Core.Automation.WebDriver.WrapperFactory
         public MobileDriver()
         {
             this.Capabilities = new DesiredCapabilities();
+            this.Capabilities.SetCapability(AccessKey, ConfigurationManager.AppSettings["accessKey"].ToString());
             this.Capabilities.SetCapability(PlatformName,  ConfigurationManager.AppSettings["PlatformName"].ToString());
             this.Capabilities.SetCapability(PlatformVersion,  ConfigurationManager.AppSettings["PlatformVersion"].ToString());
             this.Capabilities.SetCapability(DeviceName, ConfigurationManager.AppSettings["DeviceName"].ToString());

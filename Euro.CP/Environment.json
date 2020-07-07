@@ -1,0 +1,515 @@
+{
+    "Projects": [
+        {
+            "Name": "Master",
+            "Portals": [
+                {
+                    "Name": "Retailer",
+                    "Url": "https://retailers.bossrevolution.awsqa.idt.net/",
+                    "Users": [
+                        {
+                            "Type": "Retailer",
+                            "Name": "1142862477",
+                            "Password": "Password1",
+                            "StoreName": "master"
+                        },
+                        {
+                            "Type": "Agent",
+                            "Name": "1135228798",
+                            "Password": "Password1"
+                        },
+                        {
+                            "Type": "ParentRetailer",
+                            "Name": "1142862477",
+                            "Password": "Password1"
+                        }
+                    ]
+                },
+                {
+                    "Name": "Distributor",
+                    "Url": "https://distributors.bossrevolution.awsqa.idt.net/",
+                    "Users": [
+                        {
+                            "Type": "Distributor",
+                            "Name": "mdistrib",
+                            "Password": "Password1"
+                        },
+                        {
+                            "Type": "SalesPerson",
+                            "Name": "SalesPersonAutomation",
+                            "Password": "Password1"
+                        },
+                        {
+                            "Type": "DistributorWithoutVerify",
+                            "Name": "autoTestTwoSteps6xu",
+                            "Password": "autoTest123456"
+                        }
+                    ]
+                },
+                {
+                    "Name": "BRMdeact",
+                    "Url": "http://eando.debit.idt.net/mvnomonitor/cgi-bin/BRMdeact.cgi/"
+                },
+                {
+                    "Name": "Sprint",
+                    "Url": "https://mvno.sprint.com/mvno/controller/Admin/showLogin",
+                    "Users": [
+                        {
+                            "Type": "Sprint",
+                            "Name": "IDTReadTeam",
+                            "Password": "Control123"
+                        }
+                    ]
+                },
+                {
+                    "Name": "Custcare",
+                    "Url": "https://qa1.web.idt.net/mis/sso/?ReturnURL=http://lwebqa03.ixtelecom.com/custcare/do/custCare",
+                    "Users": [
+                        {
+                            "Type": "Custcare",
+                            "Name": "selenium",
+                            "Password": "Selenium3456"
+                        }
+                    ]
+                },
+                {
+                    "Name": "Bro",
+                    "Url": "https://{0}:{1}@bro.bossrevolution.awsqa.idt.net/",
+                    "Users": [
+                        {
+                            "Type": "Bro",
+                            "Name": "misqa2",
+                            "Password": "Summer2019"
+                        }
+                    ]
+                },
+                {
+                    "Name": "CPASAPI",
+                    "Url": "http://srapi-dev.qa-int.bossrow.net"
+                }
+            ],
+            "DBs": [
+                {
+                    "Name": "PSF",
+                    "Host": "ex02qa04-vip.corp.idt.net",
+                    "User": "psro",
+                    "Password": "idtnet2phone",
+                    "Port": "1522",
+                    "ServiceName": "retldev.db.idt.net",
+                    "Type": "Oracle"
+                },
+                {
+                    "Name": "OneApp",
+                    "Host": "ex02qa04-vip.corp.idt.net",
+                    "User": "psro",
+                    "Password": "idtnet2phone",
+                    "Port": "1522",
+                    "ServiceName": "retldev.db.idt.net",
+                    "Type": "Oracle"
+                },
+                {
+                    "Name": "SNAPPYQA",
+                    "Server": "snappy-mysql-db.chukdnmprvkk.us-east-1.rds.amazonaws.com",
+                    "ServiceName": "snappy_db",
+                    "User": "snappy",
+                    "Password": "snappy",
+                    "Type": "MySql"
+                },
+                {
+                    "Name": "PSRO",
+                    "Host": "ex02qa04-vip.corp.idt.net",
+                    "User": "psro",
+                    "Password": "idtnet2phone",
+                    "Port": "1522",
+                    "ServiceName": "retldev.db.idt.net",
+                    "Type": "Oracle"
+                }
+            ],
+            "APIs": [
+                {
+                    "Name": "PSF",
+                    "Url": "http://psfoneapp.awsqa.idt.net/psf.svc"
+                }
+            ]
+        },
+        {
+            "Name": "QA",
+            "Portals": [
+                {
+                    "Name": "Retailer",
+                    "Url": "https://rc-retailers.bossrevolution.awsqa.idt.net/",
+                    "Users": [
+                        {
+                            "Type": "Retailer",
+                            "Name": "1145649399",
+                            "Password": "Mobile22",
+                            "StoreName": "alopez1-a"
+                        },
+                        {
+                            "Type": "Agent",
+                            "Name": "1189021384",
+                            "Password": "Password1"
+                        },
+                        {
+              "Type": "UnverifiedAgent",
+              "Name": "1121957407",
+              "Password": "9188"
+            },
+            {
+                            "Type": "RetailerWithV2",
+                            "Name": "1186432445",
+                            "Password": "Mobile22"
+                        },
+                        {
+                            "Type": "ParentRetailer",
+                            "Name": "1145649399",
+                            "Password": "Mobile22"
+                        },
+                        {
+                            "Type": "DBPBillingRetailerDAILY",
+                            "Name": "1120081374",
+                            "Password": "Password1"
+                        },
+                        {
+                            "Type": "MTBillingRetailerDAILY",
+                            "Name": "1133474838",
+                            "Password": "Password1",
+                            "StoreName": "rbstore"
+                        },
+                        {
+                            "Type": "MTNoBillingRetailerDAILY",
+                            "Name": "1139343055",
+                            "Password": "123QWEasd",
+                            "StoreName": "no_payment_retailer"
+            },
+            {
+              "Type": "RetailerWithMT",
+              "Name": "1135829908",
+              "Password": "Password1"
+            },
+                      {
+                        "Type": "AgentForDeactivatedRetailer",
+                        "Name": "1125261124",
+                        "Password": "Password1"
+                      },
+                      {
+                        "Type": "DeactivatedRetailer",
+                        "Name": "1192279633",
+                        "Password": "Password1"
+                      }
+                    ]
+                },
+                {
+                    "Name": "Distributor",
+                    "Url": "https://rc-distributors.bossrevolution.awsqa.idt.net/",
+                    "Users": [
+                        {
+                            "Type": "Distributor",
+                            "Name": "IrinaPsf2",
+                            "Password": "Mobile22"
+                        },
+                        {
+                            "Type": "SalesPerson",
+                            "Name": "SalesPersonAutomation",
+                            "Password": "Password1"
+                        },
+                        {
+                            "Type": "DistributorWithoutVerify",
+                            "Name": "autoTestTwoSteps6xu",
+                            "Password": "autoTest123456"
+                        },
+                        {
+                            "Type": "DistributorsWithoutCreditWallet",
+                            "Name": "Testcash",
+                            "Password": "Password1"
+            },
+            {
+              "Type": "SalesPersonWithMT",
+              "Name": "salespersonmt",
+              "Password": "Password1"
+            },
+            {
+              "Type": "DistributorWithLowBalance",
+              "Name": "AnnaAuto22",
+              "Password": "Password1"
+                        }
+                    ]
+                },
+                {
+                    "Name": "BRMdeact",
+                    "Url": "http://eando.debit.idt.net/mvnomonitor/cgi-bin/BRMdeact.cgi/"
+                },
+                {
+                    "Name": "Sprint",
+                    "Url": "https://mvno.sprint.com/mvno/controller/Admin/showLogin",
+                    "Users": [
+                        {
+                            "Type": "Sprint",
+                            "Name": "IDTReadTeam",
+                            "Password": "Summer2018"
+                        }
+                    ]
+                },
+                {
+                    "Name": "Custcare",
+                    "Url": "https://qa1.web.idt.net/mis/sso/?ReturnURL=http://lwebqa03.ixtelecom.com/custcare/do/custCare",
+                    "Users": [
+                        {
+                            "Type": "Custcare",
+                            "Name": "selenium",
+                            "Password": "Selenium3456"
+                        }
+                    ]
+                },
+                {
+                    "Name": "Bro",
+                    "Url": "https://{0}:{1}@rc-bro.bossrevolution.awsqa.idt.net/",
+                    "Users": [
+                      {
+                        "Type": "Bro",
+                        "Name": "misqa2",
+                        "Password": "Summer2019"
+                      }
+                    ]
+                },
+                {
+                    "Name": "CPASAPI",
+                    "Url": "http://cpas-cc-api1.qa-int.bossrow.net"
+                },
+                {
+                    "Name": "MTSOLR",
+                    "Url": "http://169.132.166.19:8080/solr/mt"
+                },
+                {
+                    "Name": "SRSOLR",
+                    "Url": "http://169.132.166.19:8080/solr/sr"
+                },
+                {
+                    "Name": "OasisUTA",
+                    "Url": "http://oasis-dev.awsdev.idt.net/debit/oasis",
+                    "Users": [
+                        {
+                            "Type": "OasisUser",
+                            "Name": "misqa2",
+                            "Password": "Summer2019"
+                        }
+                    ]
+                }
+            ],
+            "DBs": [
+                {
+                    "Name": "PSF",
+                    "Host": "ex02qa04-vip.corp.idt.net",
+                    "User": "psro",
+                    "Password": "idtnet2phone",
+                    "Port": "1522",
+                    "ServiceName": "bossqa.db.idt.net",
+                    "Type": "Oracle"
+                },
+                {
+                    "Name": "OneApp",
+                    "Host": "ex02qa04-vip.corp.idt.net",
+                    "User": "psro",
+                    "Password": "idtnet2phone",
+                    "Port": "1522",
+                    "ServiceName": "bossqa.db.idt.net",
+                    "Type": "Oracle"
+                },
+                {
+                    "Name": "SNAPPYQA",
+                    "Server": "snappy-mysql-db.chukdnmprvkk.us-east-1.rds.amazonaws.com",
+                    "ServiceName": "snappy_db",
+                    "User": "snappy",
+                    "Password": "snappy",
+                    "Type": "MySql"
+                }
+            ],
+            "APIs": [
+                {
+                    "Name": "PSF",
+                    "Url": "http://rc-psfoneapp.awsqa.idt.net/psf.svc"
+                }
+            ]
+        },
+        {
+            "Name": "Production",
+            "Portals": [
+                {
+                    "Name": "Retailer",
+                    "Url": "https://retailers.bossrevolution.com/",
+                    "Users": [
+                        {
+                            "Type": "Retailer",
+                            "Name": "",
+                            "Password": ""
+                        }
+                    ]
+                }
+            ],
+            "DBs": [
+                {
+                    "Name": "OneApp",
+                    "Host": "",
+                    "User": "",
+                    "Password": "",
+                    "Port": "",
+                    "ServiceName": "",
+                    "Type": "Oracle"
+                }
+            ],
+            "APIs": [
+                {
+                    "Name": "PSF",
+                    "Url": ""
+                }
+            ]
+        },
+        {
+            "Name": "MasterDev",
+            "Portals": [
+                {
+                    "Name": "Retailer",
+                    "Url": "https://internal-br1apprjqm-alb-1539436577.us-east-1.elb.amazonaws.com/",
+                    "Users": [
+                        {
+                            "Type": "Retailer",
+                            "Name": "1142862477",
+                            "Password": "Password1",
+                            "StoreName": "master"
+                        },
+                        {
+                            "Type": "Agent",
+                            "Name": "1135228798",
+                            "Password": "Password1"
+                        },
+                        {
+                            "Type": "ParentRetailer",
+                            "Name": "1142862477",
+                            "Password": "Password1"
+                        }
+                    ]
+                },
+                {
+                    "Name": "Distributor",
+                    "Url": "https://distributors.bossrevolution.awsqa.idt.net/",
+                    "Users": [
+                        {
+                            "Type": "Distributor",
+                            "Name": "mdistrib",
+                            "Password": "Password1"
+                        },
+                        {
+                            "Type": "SalesPerson",
+                            "Name": "SalesPersonAutomation",
+                            "Password": "Password1"
+                        },
+                        {
+                            "Type": "DistributorWithoutVerify",
+                            "Name": "autoTestTwoSteps6xu",
+                            "Password": "autoTest123456"
+                        }
+                    ]
+                },
+                {
+                    "Name": "BRMdeact",
+                    "Url": "http://eando.debit.idt.net/mvnomonitor/cgi-bin/BRMdeact.cgi/"
+                },
+                {
+                    "Name": "Sprint",
+                    "Url": "https://mvno.sprint.com/mvno/controller/Admin/showLogin",
+                    "Users": [
+                        {
+                            "Type": "Sprint",
+                            "Name": "IdtSHerrara",
+                            "Password": "Control123!"
+                        }
+                    ]
+                },
+                {
+                    "Name": "Custcare",
+                    "Url": "https://qa1.web.idt.net/mis/sso/?ReturnURL=http://lwebqa03.ixtelecom.com/custcare/do/custCare",
+                    "Users": [
+                        {
+                            "Type": "Custcare",
+                            "Name": "selenium",
+                            "Password": "Selenium3456"
+                        }
+                    ]
+                },
+                {
+                    "Name": "Bro",
+                    "Url": "https://{0}:{1}@bro.bossrevolution.awsqa.idt.net/",
+                    "Users": [
+                        {
+                            "Type": "Bro",
+                            "Name": "misqa2",
+                            "Password": "Summer2019"
+                        }
+                    ]
+                },
+                {
+                    "Name": "CPASAPI",
+                    "Url": "http://srapi-dev.qa-int.bossrow.net"
+                },
+                {
+                    "Name": "MTSOLR",
+                    "Url": "http://169.132.166.19:8080/solr/mtm"
+                },
+                {
+                    "Name": "SRSOLR",
+                    "Url": "http://169.132.166.19:8080/solr/srm"
+                }
+            ],
+            "DBs": [
+                {
+                    "Name": "PSF",
+                    "Host": "ex02qa04-vip.corp.idt.net",
+                    "User": "psf",
+                    "Password": "retaildv_psf",
+                    "Port": "1522",
+                    "ServiceName": "retldev.db.idt.net",
+                    "Type": "Oracle"
+                },
+                {
+                    "Name": "OneApp",
+                    "Host": "ex02qa04-vip.corp.idt.net",
+                    "User": "brb",
+                    "Password": "retaildv_brb",
+                    "Port": "1522",
+                    "ServiceName": "retldev.db.idt.net",
+                    "Type": "Oracle"
+                },
+                {
+                    "Name": "SNAPPYQA",
+                    "Server": "snappy-mysql-db.chukdnmprvkk.us-east-1.rds.amazonaws.com",
+                    "ServiceName": "snappy_db",
+                    "User": "snappy",
+                    "Password": "snappy",
+                    "Type": "MySql"
+                }
+            ],
+            "APIs": [
+                {
+                    "Name": "PSF",
+                    "Url": "http://psfoneapp.awsqa.idt.net/psf.svc"
+        }
+      ]
+    },
+    {
+      "Name": "UAT",
+      "Portals": [
+        {
+          "Name": "Retailer",
+          "Url": "https://rc-retailers.bossrevolution.com/",
+          "Users": [
+            {
+              "Type": "Retailer",
+              "Name": "",
+              "Password": ""
+            }
+          ]
+                }
+            ]
+        }
+    ]
+}

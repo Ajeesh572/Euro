@@ -199,6 +199,7 @@
     <Compile Include="Assert\CustomAssert.cs" />
     <Compile Include="Assert\IAssertableComponent.cs" />
     <Compile Include="Assert\SoftAssert.cs" />
+    <Compile Include="Component\BaseMobileComponent.cs" />
     <Compile Include="Component\BaseComponent.cs" />
     <Compile Include="Entities\AccountEntity.cs" />
     <Compile Include="Entities\BaseEntity.cs" />
