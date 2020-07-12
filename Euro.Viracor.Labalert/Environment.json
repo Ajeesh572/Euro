@@ -3,6 +3,17 @@
         {
             "Name": "Master",
             "Portals": [
+			{
+                    "Name": "Viracor",
+                    "Url": "com.viracorqa.vma",
+                    "Users": [
+                        {
+							"Type" : "LABALERT",
+                            "Name": "ritikarani@eurofins.com",
+                            "Password": "Qwertyuiop@12345",
+                        }
+                    ]
+                },
                 {
                     "Name": "Retailer",
                     "Url": "https://retailers.bossrevolution.awsqa.idt.net/",

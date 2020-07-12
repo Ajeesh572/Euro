@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.26730.16
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Euro.Core.Automation", "Euro.Core.Automation\Euro.Core.Automation.csproj", "{3AC4459C-811A-4878-9F9B-E27EA0DBD1CC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Euro.Viracor.Labalert", "Euro.CP\Euro.Viracor.Labalert.csproj", "{44F49D49-DBF6-415C-804E-719A4E93473C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Euro.Viracor.Labalert", "Euro.Viracor.Labalert\Euro.Viracor.Labalert.csproj", "{44F49D49-DBF6-415C-804E-719A4E93473C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

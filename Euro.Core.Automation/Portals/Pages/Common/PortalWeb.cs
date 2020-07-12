@@ -10,6 +10,7 @@ namespace Euro.Core.Automation.Portals.Pages.Common
         Dtc,
         DtcOneApp,
         OasisUTA,
+        [StringValue("Viracor")] Viracor,
         [StringValue("Unified")] Unified,
         [StringValue("Fireball")] Fireball
     }

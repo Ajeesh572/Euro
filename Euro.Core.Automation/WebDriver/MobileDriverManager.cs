@@ -2,6 +2,9 @@
 // Copyright (c) Euro. All rights reserved.
 // </copyright>
 
+using Euro.Core.Automation.Utilities.Logger;
+using System.Windows.Forms;
+
 namespace Euro.Core.Automation.WebDriver
 {
     /// <summary>

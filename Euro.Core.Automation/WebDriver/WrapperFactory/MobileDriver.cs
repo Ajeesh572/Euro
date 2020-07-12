@@ -6,7 +6,9 @@ namespace Euro.Core.Automation.WebDriver.WrapperFactory
 {
     using System;
     using System.Configuration;
+    using Euro.Core.Automation.Utilities.JsonManager;
     using OpenQA.Selenium;
+    using OpenQA.Selenium.Appium.Enums;
     using OpenQA.Selenium.Remote;
 
     /// <summary>
@@ -33,7 +35,15 @@ namespace Euro.Core.Automation.WebDriver.WrapperFactory
             this.Capabilities.SetCapability(PlatformVersion,  ConfigurationManager.AppSettings["PlatformVersion"].ToString());
             this.Capabilities.SetCapability(DeviceName, ConfigurationManager.AppSettings["DeviceName"].ToString());
             this.Capabilities.SetCapability(NoReset, ConfigurationManager.AppSettings["NoReset"]);
-            this.Capabilities.SetCapability(App, ConfigurationManager.AppSettings["App"].ToString());
+            this.Capabilities.SetCapability(MobileCapabilityType.App, "cloud:com.viracorqa.vma");
+
+            // this.Capabilities.SetCapability(App, GetIpaFilePath("ViracorMobileAppVMA.ipa"));
+            // this.Capabilities.SetCapability(App, ConfigurationManager.AppSettings["App"].ToString());
+        }
+
+        private string GetIpaFilePath(string fileName)
+        {
+           return FileManager.GetFilePath(fileName);
         }
 
         /// <summary>

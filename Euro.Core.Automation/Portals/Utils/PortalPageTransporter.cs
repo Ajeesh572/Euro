@@ -55,8 +55,8 @@ namespace Euro.Core.Automation.Portals.Utils
         /// </summary>
         public void DeleteAllCookies()
         {
-            WebDriverManager.Instance.GetWebDriver.Manage().Cookies.DeleteAllCookies();
-            WebDriverManager.Instance.GetWebDriver.Navigate().Refresh();
+            WebDriverManager.Instance.GetWebDriver.Manage().Cookies.DeleteAllCookies(); 
+            WebDriverManager.Instance.GetWebDriver.Navigate().Refresh();     
         }
 
         /// <summary>

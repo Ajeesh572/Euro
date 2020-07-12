@@ -217,6 +217,8 @@
     <Compile Include="Component\SelectActions.cs" />
     <Compile Include="Page\Base\BasePageSection.cs" />
     <Compile Include="Page\Base\OasisBasePage.cs" />
+    <Compile Include="Page\MobileBase\MobileBasePageSection.cs" />
+    <Compile Include="Page\MobileBase\MobileBasePage.cs" />
     <Compile Include="Portals\Environment\Environments.cs" />
     <Compile Include="Portals\Hooks\BaseHook.cs" />
     <Compile Include="Portals\Hooks\GlobalHooks.cs" />

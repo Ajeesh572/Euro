@@ -63,11 +63,11 @@ namespace Euro.Core.Automation.WebDriver
             var screen = Screen.PrimaryScreen.Bounds;
             Logging.Debug($"Screen size before selecting browser:{screen.Width}, {screen.Height}");
             base.InitWebDriver();
-            Driver.Manage().Window.Size = GetResolution();
-            var screenAfterSelectBrowser = Screen.PrimaryScreen.Bounds;
-            Logging.Debug($"Screen size after selecting browser:{screenAfterSelectBrowser.Width}, {screenAfterSelectBrowser.Height}");
-            Logging.Debug($"Before Maximize windows, page's size: {Driver.Manage().Window.Size}");
-            Logging.Debug($"After Maximize windows, page's size: {Driver.Manage().Window.Size}");
+            //Driver.Manage().Window.Size = GetResolution();
+            //var screenAfterSelectBrowser = Screen.PrimaryScreen.Bounds;
+            //Logging.Debug($"Screen size after selecting browser:{screenAfterSelectBrowser.Width}, {screenAfterSelectBrowser.Height}");
+            //Logging.Debug($"Before Maximize windows, page's size: {Driver.Manage().Window.Size}");
+            //Logging.Debug($"After Maximize windows, page's size: {Driver.Manage().Window.Size}");
         }
 
         /// <summary>

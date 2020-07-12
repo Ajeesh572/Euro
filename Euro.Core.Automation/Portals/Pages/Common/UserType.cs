@@ -9,6 +9,7 @@ namespace Euro.Core.Automation.Portals.Pages.Common
     /// </summary>
     public enum UserType
     {
+        LABALERT,
         Retailer,
         MtDailyCommissionRetailer,
         DBPBillingRetailerDAILY,

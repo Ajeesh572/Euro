@@ -4,8 +4,11 @@
 
 namespace Euro.Viracor.Labalert.Test.Mobile.CP.Steps
 {
+    using Euro.Core.Automation.Utilities.CommonAction;
+    using Euro.Core.Automation.Utilities.JsonManager;
     using Euro.Core.Automation.WebDriver;
     using Euro.Core.Automation.WebDriver.WrapperFactory;
+    using Euro.Viracor.Labalert.Mobile.Main.IosLabAlert.MobileUI.Pages;
     using TechTalk.SpecFlow;
 
     [Binding]
@@ -13,18 +16,18 @@ namespace Euro.Viracor.Labalert.Test.Mobile.CP.Steps
     {
         // For additional details on SpecFlow step definitions see https://go.specflow.org/doc-stepdef
 
-        private readonly ScenarioContext context;
+        private LabAlertLoginPage labAlertLoginPage;
 
-        public LoginToViracorQAMob(ScenarioContext injectedContext)
+        public LoginToViracorQAMob()
         {
-            context = injectedContext;
+            labAlertLoginPage = new LabAlertLoginPage();
         }
 
         [StepDefinition(@"user logged in to viracor qa")]
         public void GivenUserLoggedInToViracorQa()
         {
-            
-            MobileDriverManager.Instance.InitWebDriver();
+            User user = EnvironmentManager.GetUser("Viracor", "LABALERT");
+            labAlertLoginPage.login(user.Name, user.Password);
         }
     }
 }

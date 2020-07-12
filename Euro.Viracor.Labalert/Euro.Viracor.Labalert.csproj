@@ -233,6 +233,11 @@
       <DependentUpon>ZoneReportLocators.resx</DependentUpon>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
+    <Compile Include="Mobile\Main\Bro\Resources\Locators\LabAlert\LabAlertLoginPageLocators.Designer.cs">
+      <DependentUpon>LabAlertLoginPageLocators.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
     <Compile Include="Mobile\Main\Bro\Resources\Locators\ReportsMenuLocators.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -330,14 +335,19 @@
     <Compile Include="Mobile\Main\Bro\Utils\CommonWaits.cs" />
     <Compile Include="Mobile\Main\Bro\Utils\Constants.cs" />
     <Compile Include="Mobile\Main\Bro\Utils\GlobalVariable.cs" />
+    <Compile Include="Mobile\Main\IosLabAlert\MobileUI\pages\LabAlertLoginPage.cs" />
     <Compile Include="Mobile\Main\Popups\InfoPopup.cs" />
+    <Compile Include="Mobile\Test\IosLabAlert\Features\LoginToViracorQAMob.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LoginToViracorQAMob.feature</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
-    <Compile Include="Mobile\Test\IosLabAlert\Features\LoginToViracorQAMob.cs" />
     <Compile Include="Mobile\Test\IosLabAlert\Steps\LoginToViracorQAMob.cs" />
     <Compile Include="Web References\OldPSF\Reference.cs">
       <AutoGen>True</AutoGen>
@@ -367,6 +377,12 @@
       <LastGenOutput>ChangeSetsLocators.Designer.cs</LastGenOutput>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
+    <EmbeddedResource Include="Mobile\Main\Bro\Resources\Locators\LabAlert\LabAlertLoginPageLocators.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>LabAlertLoginPageLocators.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
     <EmbeddedResource Include="Mobile\Main\Bro\Resources\Locators\ReportsMenuLocators.resx">
       <SubType>Designer</SubType>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -394,6 +410,10 @@
     <None Include="Mobile\Main\Bro\Resources\TestData\UploadBlackListForProduct\Product_black_list.csv">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Mobile\Test\IosLabAlert\Features\LoginToViracorQAMob.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>LoginToViracorQAMob.feature.cs</LastGenOutput>
+    </None>
     <None Include="packages.config">
       <SubType>Designer</SubType>
     </None>
@@ -401,7 +421,7 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
-    <None Include="Mobile\Test\IosLabAlert\Features\LoginToViracorQAMob.feature" />
+    <None Include="ViracorMobileAppVMA\ViracorMobileAppVMA.ipa" />
     <None Include="Web References\OldPSF\PSF.wsdl" />
     <None Include="Web References\OldPSF\PSF.xsd">
       <SubType>Designer</SubType>
