@@ -8,7 +8,9 @@ namespace Euro.Core.Automation.WebDriver.WrapperFactory
     using System.Configuration;
     using Euro.Core.Automation.Utilities.JsonManager;
     using OpenQA.Selenium;
+    using OpenQA.Selenium.Appium;
     using OpenQA.Selenium.Appium.Enums;
+    using OpenQA.Selenium.Appium.iOS;
     using OpenQA.Selenium.Remote;
 
     /// <summary>
@@ -22,12 +24,13 @@ namespace Euro.Core.Automation.WebDriver.WrapperFactory
         private static string App = "app";
         private static string NoReset = "noReset";
         private static string AccessKey = "accessKey";
-        private static string url = "https://cloud.seetest.io/wd/hub/";//ConfigurationManager.AppSettings["MobileUrl"].ToString();
+        private static string url = "https://cloud.seetest.io:443/wd/hub";//ConfigurationManager.AppSettings["MobileUrl"].ToString();
 
         /// <summary>
         /// Initializes a new instance of the <see cref="MobileDriver"/> class.
         /// </summary>
         public MobileDriver()
+        
         {
             this.Capabilities = new DesiredCapabilities();
             this.Capabilities.SetCapability(AccessKey, ConfigurationManager.AppSettings["accessKey"].ToString());
@@ -36,6 +39,7 @@ namespace Euro.Core.Automation.WebDriver.WrapperFactory
             this.Capabilities.SetCapability(DeviceName, ConfigurationManager.AppSettings["DeviceName"].ToString());
             this.Capabilities.SetCapability(NoReset, ConfigurationManager.AppSettings["NoReset"]);
             this.Capabilities.SetCapability(MobileCapabilityType.App, "cloud:com.viracorqa.vma");
+            
 
             // this.Capabilities.SetCapability(App, GetIpaFilePath("ViracorMobileAppVMA.ipa"));
             // this.Capabilities.SetCapability(App, ConfigurationManager.AppSettings["App"].ToString());
@@ -56,10 +60,12 @@ namespace Euro.Core.Automation.WebDriver.WrapperFactory
         /// </summary>
         /// <returns>An instance of <see cref="DesiredCapabilities"/></returns>
         public abstract DesiredCapabilities SetCapability();
-
+            
         /// <inheritdoc/>
         public IWebDriver InitDriver()
         {
+            //AppiumDriver<IOSElement> driver = new IOSDriver<IOSElement>(new Uri(url),SetCapability(), TimeSpan.FromSeconds(600));
+            //driver.FindElementById("signInName").SendKeys("a");
             return new RemoteWebDriver(new Uri(url), this.SetCapability(), TimeSpan.FromSeconds(600));
         }
     }

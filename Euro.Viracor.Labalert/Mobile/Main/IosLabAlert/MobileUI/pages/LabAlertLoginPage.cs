@@ -20,12 +20,6 @@ namespace Euro.Viracor.Labalert.Mobile.Main.IosLabAlert.MobileUI.Pages
     {
         private const string fileName = "LabAlertLoginPageLocators";
 
-        //[FindsByIOSUIAutomation(XPath = "//*[@id='signInName']")]
-        //private IWebElement txtUserName;
-        //[FindsByIOSUIAutomation]
-        //[IDTFindBy  (XPath = "//*[@id='signInName']")]
-        //private IWebElement txtUserName;
-
         [IDTFindBy(File = fileName, Locator = "TxtUserName")]
         private IWebElement txtUserName;
 
@@ -35,13 +29,16 @@ namespace Euro.Viracor.Labalert.Mobile.Main.IosLabAlert.MobileUI.Pages
         [IDTFindBy(File = fileName, Locator = "BtnLogOn")]
         private IWebElement btnLogOn;
 
-        public void login(string userName,string pwd)
+        /// <summary>
+        /// Login to ViracorQA
+        /// </summary>
+        /// <param name="userName">Valid User Name</param>
+        /// <param name="pwd">Password</param>
+        public void LoginToViracor(string userName, string pwd)
         {
-            Driver.WindowHandles
             txtUserName.SendKeys(userName);
             txtPassword.SendKeys(pwd);
             btnLogOn.Click();
-            //btnLogOn.Click();
         }
     }
 }
