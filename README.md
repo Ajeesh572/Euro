@@ -1,4 +1,4 @@
-# IDT Core Automation Framework
+# Eurofins Core Automation Framework
 
 # Contains
 

@@ -11,6 +11,11 @@
 							"Type" : "LABALERT",
                             "Name": "ritikarani@eurofins.com",
                             "Password": "Qwertyuiop@12345",
+                        },
+                        {
+							"Type" : "LABALERT1",
+                            "Name": "ritikarani@eurofins.com",
+                            "Password": "Qwertyuiop@12345",
                         }
                     ]
                 },

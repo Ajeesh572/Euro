@@ -15,6 +15,7 @@ namespace Euro.Core.Automation.WebDriver.WrapperFactory
         private static string Platform = "platform";
         private static string Udid = "udid";
         private static string BundleId = "bundleId";
+        private static string AutomationName = "automationName";
 
         /// <inheritdoc/>
         public override DesiredCapabilities SetCapability()
@@ -22,7 +23,7 @@ namespace Euro.Core.Automation.WebDriver.WrapperFactory
             this.Capabilities.SetCapability(Platform, ConfigurationManager.AppSettings["Platform"].ToString());
             this.Capabilities.SetCapability(Udid, ConfigurationManager.AppSettings["Udid"].ToString());
             this.Capabilities.SetCapability(BundleId, ConfigurationManager.AppSettings["BundleId"].ToString());
-            return this.Capabilities;
+            this.Capabilities.SetCapability(AutomationName, ConfigurationManager.AppSettings["AutomationName"].ToString());            return this.Capabilities;
         }
     }
 }

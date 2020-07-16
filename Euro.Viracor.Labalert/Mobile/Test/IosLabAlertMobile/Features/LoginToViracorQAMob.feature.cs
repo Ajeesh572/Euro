@@ -10,7 +10,7 @@
 // ------------------------------------------------------------------------------
 #region Designer generated code
 #pragma warning disable
-namespace Euro.Viracor.Labalert.Mobile.Test.IosLabAlert.Features
+namespace Euro.Viracor.Labalert.Mobile.Test.IosLabAlertMobile.Features
 {
     using TechTalk.SpecFlow;
     
@@ -18,8 +18,8 @@ namespace Euro.Viracor.Labalert.Mobile.Test.IosLabAlert.Features
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "2.3.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [NUnit.Framework.TestFixtureAttribute()]
-    [NUnit.Framework.DescriptionAttribute("LoginToViracorQAMob")]
-    public partial class LoginToViracorQAMobFeature
+    [NUnit.Framework.DescriptionAttribute("LoginToViracorQAMobileApp")]
+    public partial class LoginToViracorQAMobileAppFeature
     {
         
         private TechTalk.SpecFlow.ITestRunner testRunner;
@@ -31,7 +31,7 @@ namespace Euro.Viracor.Labalert.Mobile.Test.IosLabAlert.Features
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "LoginToViracorQAMob", null, ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "LoginToViracorQAMobileApp", "As a valid QA user,\r\nI want to login to Lab Alert Application", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -64,14 +64,16 @@ namespace Euro.Viracor.Labalert.Mobile.Test.IosLabAlert.Features
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("889889: Logon to viracor qa")]
-        public virtual void _889889LogonToViracorQa()
+        [NUnit.Framework.DescriptionAttribute("123456: Logon to viracor qa LABALERT App")]
+        public virtual void _123456LogonToViracorQaLABALERTApp()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("889889: Logon to viracor qa", ((string[])(null)));
-#line 3
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("123456: Logon to viracor qa LABALERT App", ((string[])(null)));
+#line 5
 this.ScenarioSetup(scenarioInfo);
-#line 4
-testRunner.Given("user logged in to viracor qa", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 6
+testRunner.Given("user logged in to \"Viracor\" mobile App in \"LABALERT\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 7
+testRunner.Then("Verify that User logged in to LABALERT Mobile App sucessfully", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }

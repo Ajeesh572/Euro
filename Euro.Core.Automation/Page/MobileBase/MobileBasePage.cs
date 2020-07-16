@@ -19,7 +19,7 @@
             this.Driver = WebDriver.MobileDriverManager.Instance.GetWebDriver;
             //this.Wait = WebDriver.MobileDriverManager.Instance.GetWebDriverWait;
             TimeOutDuration timeSpan = new TimeOutDuration(new TimeSpan(0, 0, 5));
-            PageFactory.InitElements(this.Driver, this, new AppiumPageObjectMemberDecorator(timeSpan));
+           // PageFactory.InitElements(this.Driver, this, new AppiumPageObjectMemberDecorator(timeSpan));
         }
 
         /// <summary>

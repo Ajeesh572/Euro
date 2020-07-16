@@ -62,7 +62,7 @@ namespace Euro.Viracor.Labalert.Mobile.Main.Viracor.Resources.Locators.LabAlert 
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to xpath__//*[@id=&apos;logonText&apos;].
+        ///   Looks up a localized string similar to xpath__//*[@id=&apos;Log On&apos; and @class=&apos;UIAButton&apos;].
         /// </summary>
         public static string BtnLogOn {
             get {
@@ -71,7 +71,7 @@ namespace Euro.Viracor.Labalert.Mobile.Main.Viracor.Resources.Locators.LabAlert 
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to xpath__//*[@id=&apos;password&apos;].
+        ///   Looks up a localized string similar to xpath__//*[@placeholder=&apos;Password&apos; and @text].
         /// </summary>
         public static string TxtPassword {
             get {
@@ -80,7 +80,7 @@ namespace Euro.Viracor.Labalert.Mobile.Main.Viracor.Resources.Locators.LabAlert 
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to xpath__//*[@placeholder=&apos;Username&apos;].
+        ///   Looks up a localized string similar to xpath__//*[@class=&apos;UIAView&apos; and ./*[@placeholder=&apos;User ID&apos;]].
         /// </summary>
         public static string TxtUserName {
             get {

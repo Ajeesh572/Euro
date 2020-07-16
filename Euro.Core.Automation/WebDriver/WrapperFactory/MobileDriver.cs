@@ -30,7 +30,6 @@ namespace Euro.Core.Automation.WebDriver.WrapperFactory
         /// Initializes a new instance of the <see cref="MobileDriver"/> class.
         /// </summary>
         public MobileDriver()
-        
         {
             this.Capabilities = new DesiredCapabilities();
             this.Capabilities.SetCapability(AccessKey, ConfigurationManager.AppSettings["accessKey"].ToString());
@@ -38,16 +37,9 @@ namespace Euro.Core.Automation.WebDriver.WrapperFactory
             this.Capabilities.SetCapability(PlatformVersion,  ConfigurationManager.AppSettings["PlatformVersion"].ToString());
             this.Capabilities.SetCapability(DeviceName, ConfigurationManager.AppSettings["DeviceName"].ToString());
             this.Capabilities.SetCapability(NoReset, ConfigurationManager.AppSettings["NoReset"]);
-            this.Capabilities.SetCapability(MobileCapabilityType.App, "cloud:com.viracorqa.vma");
-            
 
             // this.Capabilities.SetCapability(App, GetIpaFilePath("ViracorMobileAppVMA.ipa"));
             // this.Capabilities.SetCapability(App, ConfigurationManager.AppSettings["App"].ToString());
-        }
-
-        private string GetIpaFilePath(string fileName)
-        {
-           return FileManager.GetFilePath(fileName);
         }
 
         /// <summary>
@@ -60,12 +52,10 @@ namespace Euro.Core.Automation.WebDriver.WrapperFactory
         /// </summary>
         /// <returns>An instance of <see cref="DesiredCapabilities"/></returns>
         public abstract DesiredCapabilities SetCapability();
-            
+
         /// <inheritdoc/>
         public IWebDriver InitDriver()
         {
-            //AppiumDriver<IOSElement> driver = new IOSDriver<IOSElement>(new Uri(url),SetCapability(), TimeSpan.FromSeconds(600));
-            //driver.FindElementById("signInName").SendKeys("a");
             return new RemoteWebDriver(new Uri(url), this.SetCapability(), TimeSpan.FromSeconds(600));
         }
     }

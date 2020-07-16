@@ -118,12 +118,12 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="BtnLogOn" xml:space="preserve">
-    <value>xpath__//*[@id='logonText']</value>
+    <value>xpath__//*[@id='Log On' and @class='UIAButton']</value>
   </data>
   <data name="TxtPassword" xml:space="preserve">
-    <value>xpath__//*[@id='password']</value>
+    <value>xpath__//*[@placeholder='Password' and @text]</value>
   </data>
   <data name="TxtUserName" xml:space="preserve">
-    <value>xpath__//*[@placeholder='Username']</value>
+    <value>xpath__//*[@class='UIAView' and ./*[@placeholder='User ID']]</value>
   </data>
 </root>

@@ -2,8 +2,8 @@
   "allure": {
     "directory": "allure-results",
     "links": [
-      "https://idtjira.atlassian.net/browse/{issue}",
-      "https://idtjira.atlassian.net/browse/{tms}"
+      "https://github.com/Ajeesh572/Reports/{issue}",
+      "https://github.com/Ajeesh572/Reports/{tms}"
     ]
 
   },
